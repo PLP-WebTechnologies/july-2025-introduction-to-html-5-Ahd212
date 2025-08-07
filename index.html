@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">AHD Event Survey</h1>
+    <p id="description">Please take a few moments to complete this survey</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name:</label>
+      <input id="name" name="name" type="text" placeholder="name" required>
+      <label for="email" id="email-label">Email:</label>
+      <input id="email" name="email" type="email" placeholder="exam@eg.com" required>
+      <label for="number" id="number-label">Phone no:</label>
+      <input id="number" type="number" placeholder="099999999" max="50" min="3" required>
+      <label for="dropdown">How was the experience?</label>
+      <select id="dropdown">
+        <option value="poor">Poor</option>
+        <option value="good">Good</option>
+        <option value="satisfactory">Satisfactory</option>
+        <option value="excellent">Excellent</option>
+      </select>
+      <fieldset>
+        <legend>Have you attended AHD Events Before?</legend>
+        <label for="yes">Yes</label>
+        <input type="radio" name="ahd" value="yes">
+        <label for="no">No</label>
+        <input type="radio" name="ahd" value="no">
+      </fieldset>
+      <fieldset>
+        <legend>if yes,how was your previous Experience?</legend>
+<label><input type="checkbox" name="code1" value="good">Good</label>
+<label> <input type="checkbox" name="code1" value="poor">Poor</label><label> <input type="checkbox" name="code1" value="excellent">Excellent</label>
+      </fieldset>
+      <textarea name="comments" id="comments" maxlength="500">Comments</textarea>
+      <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>
